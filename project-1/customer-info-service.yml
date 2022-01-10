@@ -1,0 +1,25 @@
+# Server config
+server:
+  port: 8081
+
+# Spring Config
+spring:
+  data:
+    mongodb:
+      database: ProjectOne
+      host: localhost
+  application:
+    name: customer-info-service
+
+eureka:
+  instance:
+    hostname: localhost
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+    prefer-ip-address: true
+
+# Constants
+constants:
+  customer:
+    personal_type: Personal
+    business_type: Business
