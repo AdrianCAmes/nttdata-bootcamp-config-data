@@ -35,5 +35,5 @@ constants:
     withdrawal_type: Withdrawal
   eureka:
     service_url:
-      customer_info_service: localhost:8081/api/v1
-      # customer_info_service: customer-info-service
+      # customer_info_service: localhost:8081/api/v1
+      customer_info_service: customer-info-service
