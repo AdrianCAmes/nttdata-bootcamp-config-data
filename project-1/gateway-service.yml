@@ -1,0 +1,37 @@
+server:
+  port: 8999
+
+eureka:
+  instance:
+    hostname: localhost
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: customer-info-service
+          uri: lb://${spring.cloud.gateway.routes[0].id}
+          predicates:
+            - Path=/${spring.cloud.gateway.routes[0].id}/**
+          filters:
+            - RewritePath=/${spring.cloud.gateway.routes[0].id}/?(?<remaining>.*), /${remaining}
+        - id: passive-operations-service
+          uri: lb://${spring.cloud.gateway.routes[1].id}
+          predicates:
+            - Path=/${spring.cloud.gateway.routes[1].id}/**
+          filters:
+            - RewritePath=/${spring.cloud.gateway.routes[1].id}/?(?<remaining>.*), /${remaining}
+        - id: active-operations-service
+          uri: lb://${spring.cloud.gateway.routes[2].id}
+          predicates:
+            - Path=/${spring.cloud.gateway.routes[2].id}/**
+          filters:
+            - RewritePath=/${spring.cloud.gateway.routes[2].id}/?(?<remaining>.*), /${remaining}
