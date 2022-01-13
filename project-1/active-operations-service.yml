@@ -27,8 +27,8 @@ constants:
     paid_status: Paid
     unpaid_status: Unpaid
   customer:
-    personal_type: Personal
-    business_type: Business
+    personal_group: Personal
+    business_group: Business
   operation:
     payment_type: Payment
     consumption_type: Consumption
