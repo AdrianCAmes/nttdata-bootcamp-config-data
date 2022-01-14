@@ -56,3 +56,4 @@ constants:
     service_url:
       gateway_service: gateway-service
       customer_info_service: customer-info-service
+      active_operations_service: active-operations-service
