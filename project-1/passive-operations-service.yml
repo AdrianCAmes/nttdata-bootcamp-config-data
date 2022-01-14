@@ -27,28 +27,28 @@ constants:
     current_group: 
       name: Current
       subgroup:
-        standard_subgroup: Standard
-        pyme_subgroup: PYME
-    savings_type: 
+        standard: Standard
+        pyme: PYME
+    savings_group: 
       name: Savings
       subgroup:
-        standard_subgroup: Standard
-        vip_subgroup: VIP
-    long_term_type:  
+        standard: Standard
+        vip: VIP
+    long_term_group:  
       name: Long term
       subgroup:
-        standard_subgroup: Standard
+        standard: Standard
   customer:
     personal_group: 
       name: Personal
       subgroup:
-        standard_subgroup: Standard
-        vip_subgroup: VIP
+        standard: Standard
+        vip: VIP
     business_group: 
       name: Business
       subgroup:
-        standard_subgroup: Standard
-        pyme_subgrouup: PYME
+        standard: Standard
+        pyme: PYME
   operation:
     deposit_type: Deposit
     withdrawal_type: Withdrawal
