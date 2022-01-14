@@ -24,12 +24,31 @@ constants:
     blocked: Blocked
     active: Active
   account:
-    current_type: Current
-    savings_type: Savings
-    long_term_type:  Long term
+    current_group: 
+      name: Current
+      subgroup:
+        standard_subgroup: Standard
+        pyme_subgroup: PYME
+    savings_type: 
+      name: Savings
+      subgroup:
+        standard_subgroup: Standard
+        vip_subgroup: VIP
+    long_term_type:  
+      name: Long term
+      subgroup:
+        standard_subgroup: Standard
   customer:
-    personal_type: Personal
-    business_type: Business
+    personal_group: 
+      name: Personal
+      subgroup:
+        standard_subgroup: Standard
+        vip_subgroup: VIP
+    business_group: 
+      name: Business
+      subgroup:
+        standard_subgroup: Standard
+        pyme_subgrouup: PYME
   operation:
     deposit_type: Deposit
     withdrawal_type: Withdrawal
