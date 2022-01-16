@@ -52,6 +52,8 @@ constants:
   operation:
     deposit_type: Deposit
     withdrawal_type: Withdrawal
+    transfer_in_type: Transfer In
+    transfer_out_type: Transfer Out
   eureka:
     service_url:
       gateway_service: gateway-service
