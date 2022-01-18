@@ -20,6 +20,9 @@ eureka:
 
 # Constants
 constants:
+  status:
+    blocked: Blocked
+    active: Active
   customer:
     personal_group: Personal
     business_group: Business
