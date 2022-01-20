@@ -20,6 +20,10 @@ eureka:
 
 # Constants
 constants:
+  circuitbreaker:
+    customer_info_service:
+      name: customersServiceCircuitBreaker
+      timeout: 2
   status:
     blocked: Blocked
     active: Active
