@@ -23,20 +23,20 @@ constants:
   circuit_breaker:
     customer_info_service:
       name: customersServiceCircuitBreaker
-      timeout: 2
+      timeout: 1
   status:
     blocked: Blocked
     active: Active
-  billing_order:
-    paid_status: Paid
-    unpaid_status: Unpaid
+  billing-order:
+    paid-status: Paid
+    unpaid-status: Unpaid
   customer:
-    personal_group: Personal
-    business_group: Business
+    personal-group: Personal
+    business-group: Business
   operation:
-    payment_type: Payment
-    consumption_type: Consumption
+    payment-type: Payment
+    consumption-type: Consumption
   eureka:
-    service_url:
-      gateway_service: gateway-service
-      customer_info_service: customer-info-service
+    service-url:
+      gateway-service: gateway-service
+      customer-info-service: customer-info-service
