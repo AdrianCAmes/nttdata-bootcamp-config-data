@@ -20,49 +20,49 @@ eureka:
 
 # Constants
 constants:
-  circuitbreaker:
-    customer_info_service:
+  circuit-breaker:
+    customer-info-service:
       name: customersServiceCircuitBreaker
       timeout: 2
-    active_operations_service:
+    active-operations-service:
       name: activesServiceCircuitBreaker
       timeout: 2
   status:
     blocked: Blocked
     active: Active
   account:
-    current_group: 
+    current-group: 
       name: Current
       subgroup:
         standard: Standard
         pyme: PYME
-    savings_group: 
+    savings-group: 
       name: Savings
       subgroup:
         standard: Standard
         vip: VIP
-    long_term_group:  
+    long-term-group:  
       name: Long term
       subgroup:
         standard: Standard
   customer:
-    personal_group: 
+    personal-group: 
       name: Personal
       subgroup:
         standard: Standard
         vip: VIP
-    business_group: 
+    business-group: 
       name: Business
       subgroup:
         standard: Standard
         pyme: PYME
   operation:
-    deposit_type: Deposit
-    withdrawal_type: Withdrawal
-    transfer_in_type: Transfer In
-    transfer_out_type: Transfer Out
+    deposit-type: Deposit
+    withdrawal-type: Withdrawal
+    transfer-in-type: Transfer In
+    transfer-out-type: Transfer Out
   eureka:
-    service_url:
-      gateway_service: gateway-service
-      customer_info_service: customer-info-service
-      active_operations_service: active-operations-service
+    service-url:
+      gateway-service: gateway-service
+      customer-info-service: customer-info-service
+      active-operations-service: active-operations-service
