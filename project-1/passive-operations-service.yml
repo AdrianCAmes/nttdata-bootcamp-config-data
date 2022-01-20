@@ -23,7 +23,7 @@ constants:
   circuit-breaker:
     customer-info-service:
       name: customersServiceCircuitBreaker
-      timeout: 1
+      timeout: 2
     active-operations-service:
       name: activesServiceCircuitBreaker
       timeout: 2
