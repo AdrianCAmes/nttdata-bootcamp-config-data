@@ -4,10 +4,10 @@ server:
 
 # Eureka config
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-    service-url:
-      default-zone: http://${eureka.instance.hostname}:8761/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

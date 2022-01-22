@@ -11,6 +11,7 @@ spring:
   application:
     name: active-operations-service
 
+# Eureka config
 eureka:
   instance:
     hostname: 20.120.122.181
