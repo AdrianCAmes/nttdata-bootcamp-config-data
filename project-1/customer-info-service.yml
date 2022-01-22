@@ -13,9 +13,8 @@ spring:
 
 eureka:
   instance:
-    hostname: 20.120.122.181
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+      defaultZone: 20.120.122.181:8761/eureka/
     prefer-ip-address: true
 
 # Constants
