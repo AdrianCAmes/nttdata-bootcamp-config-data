@@ -12,7 +12,7 @@ spring:
     name: customer-info-service
 
 eureka:
-  instance:
+  client:
     serviceUrl:
       defaultZone: http://20.120.122.181:8761/eureka/
 
