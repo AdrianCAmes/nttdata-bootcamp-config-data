@@ -4,6 +4,8 @@ server:
 
 # Eureka config
 eureka:
+  instance:
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://20.62.234.40:8761/eureka/
@@ -14,9 +16,6 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: customer-info-service
           uri: lb://${spring.cloud.gateway.routes[0].id}
