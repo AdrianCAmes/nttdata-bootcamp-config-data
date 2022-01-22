@@ -6,8 +6,7 @@ server:
 spring:
   data:
     mongodb:
-      database: ProjectOne
-      host: localhost
+      uri: mongodb://project-1:wF1AmP4bNZM2xh08wd4mxRgcbEnoeUQetRjoCqCKRdUJTuIiHS6TOgu2b4mCFmEHcWZnhdZxEDjI8wKH2CAQyw==@project-1.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@project-1@
   application:
     name: customer-info-service
 
