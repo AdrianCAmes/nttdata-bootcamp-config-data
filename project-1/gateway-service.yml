@@ -1,6 +1,8 @@
+# Server config
 server:
   port: 8999
 
+# Eureka config
 eureka:
   instance:
     hostname: localhost
@@ -8,6 +10,7 @@ eureka:
     serviceUrl:
       defaultZone: http://20.120.122.181:8761/eureka/
 
+# Spring Config
 spring:
   application:
     name: gateway-service

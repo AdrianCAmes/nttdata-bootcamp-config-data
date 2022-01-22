@@ -11,6 +11,7 @@ spring:
   application:
     name: passive-operations-service
 
+# Eureka config
 eureka:
   instance:
     hostname: localhost

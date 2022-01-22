@@ -11,6 +11,7 @@ spring:
   application:
     name: customer-info-service
 
+# Eureka config
 eureka:
   instance:
     hostname: localhost
