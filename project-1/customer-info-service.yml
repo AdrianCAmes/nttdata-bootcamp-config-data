@@ -6,7 +6,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://${{ secrets.MONGO_RESOURCE_NAME }}:${{ secrets.MONGO_KEY }}@${{ secrets.MONGO_RESOURCE_NAME }}.mongo.cosmos.azure.com:${{ secrets.MONGO_PORT }}/${{ secrets.MONGO_DATABASE_NAME }}?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@${{ secrets.MONGO_RESOURCE_NAME }}@
+      uri: ${{ secrets.MONGO_CONNECTION_STRING }}
   application:
     name: customer-info-service
 
