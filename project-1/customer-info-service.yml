@@ -17,7 +17,7 @@ eureka:
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://20.120.122.181:8761/eureka/
+      defaultZone: http://20.62.234.40/:8761/eureka/
 
 # Constants
 constants:

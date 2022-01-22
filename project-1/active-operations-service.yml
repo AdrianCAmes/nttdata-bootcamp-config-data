@@ -14,10 +14,10 @@ spring:
 # Eureka config
 eureka:
   instance:
-    hostname: 20.120.122.181
+    hostname: localhost
+  client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-    prefer-ip-address: true
+      defaultZone: http://20.62.234.40/:8761/eureka/
 
 # Constants
 constants:
