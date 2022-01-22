@@ -6,8 +6,7 @@ server:
 spring:
   data:
     mongodb:
-      database: ProjectOne
-      host: localhost
+      uri: mongodb://${{ secrets.MONGO_RESOURCE_NAME }}:${{ secrets.MONGO_KEY }}@${{ secrets.MONGO_RESOURCE_NAME }}.mongo.cosmos.azure.com:${{ secrets.MONGO_PORT }}/${{ secrets.MONGO_DATABASE_NAME }}?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@${{ secrets.MONGO_RESOURCE_NAME }}@
   application:
     name: active-operations-service
 
