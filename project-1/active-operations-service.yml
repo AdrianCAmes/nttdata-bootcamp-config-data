@@ -23,7 +23,7 @@ constants:
   circuit-breaker:
     customer-info-service:
       name: customersServiceCircuitBreaker
-      timeout: 10
+      timeout: 2
   status:
     blocked: Blocked
     active: Active
