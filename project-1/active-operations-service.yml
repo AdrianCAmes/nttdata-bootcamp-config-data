@@ -38,5 +38,5 @@ constants:
     consumption-type: Consumption
   eureka:
     service-url:
-      gateway-service: gateway-service
+      gateway-service: //gateway-service
       customer-info-service: customer-info-service
