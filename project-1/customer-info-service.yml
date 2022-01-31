@@ -26,3 +26,5 @@ constants:
   customer:
     personal_group: Personal
     business_group: Business
+  kafka:
+    credits-topic: credits-topic

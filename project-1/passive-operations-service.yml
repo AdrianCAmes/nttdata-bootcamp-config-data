@@ -63,6 +63,9 @@ constants:
     transfer-out-type: Transfer Out
   eureka:
     service-url:
+      prefix: //
       gateway-service: gateway-service
       customer-info-service: customer-info-service
       active-operations-service: active-operations-service
+  kafka:
+    topic: credits-topic
