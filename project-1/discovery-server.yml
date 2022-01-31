@@ -5,7 +5,8 @@ server:
 # Eureka config
 eureka:
   instance:
-    preferIpAddress: true
+    hostname: localhost
+    #preferIpAddress: true
   client:
     registerWithEureka: false
     fetchRegistry: false
