@@ -41,3 +41,5 @@ constants:
       prefix: //
       gateway-service: gateway-service
       customer-info-service: customer-info-service
+  kafka:
+    topic: credits-topic
