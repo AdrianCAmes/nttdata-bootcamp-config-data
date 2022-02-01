@@ -74,3 +74,6 @@ constants:
       gateway-service: gateway-service
       customer-info-service: customer-info-service
       active-operations-service: active-operations-service
+  change-rate:
+    coin-to-soles: 0.125
+    soles-to-coin: 8
