@@ -59,6 +59,9 @@ constants:
         standard: Standard
         pyme: PYME
   operation:
+    status:
+      accepted: Accepted
+      pending: Pending
     operation-type: 
       buy: Buy
       sell: Sell
