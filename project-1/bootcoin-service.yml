@@ -59,8 +59,12 @@ constants:
         standard: Standard
         pyme: PYME
   operation:
-    buy-type: Buy
-    sell-type: Sell
+    operation-type: 
+      buy: Buy
+      sell: Sell
+    payment-type:
+      yanki: Yanki
+      transaction: Transaction
   eureka:
     service-url:
       prefix: //
