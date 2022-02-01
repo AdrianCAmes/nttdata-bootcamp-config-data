@@ -1,0 +1,68 @@
+# Server config
+server:
+  port: 8085
+
+# Spring Config
+spring:
+  data:
+    mongodb:
+      uri: mongodb://project-1:wF1AmP4bNZM2xh08wd4mxRgcbEnoeUQetRjoCqCKRdUJTuIiHS6TOgu2b4mCFmEHcWZnhdZxEDjI8wKH2CAQyw==@project-1.mongo.cosmos.azure.com:10255/project-1?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@project-1@
+  application:
+    name: bootcoin-service
+
+# Eureka config
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      #defaultZone: http://20.62.234.40:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+
+# Constants
+constants:
+  circuit-breaker:
+    customer-info-service:
+      name: customersServiceCircuitBreaker
+      timeout: 2
+    active-operations-service:
+      name: activesServiceCircuitBreaker
+      timeout: 2
+  status:
+    blocked: Blocked
+    active: Active
+  account:
+    current-group: 
+      name: Current
+      subgroup:
+        standard: Standard
+        pyme: PYME
+    savings-group: 
+      name: Savings
+      subgroup:
+        standard: Standard
+        vip: VIP
+    long-term-group:  
+      name: Long term
+      subgroup:
+        standard: Standard
+  customer:
+    personal-group: 
+      name: Personal
+      subgroup:
+        standard: Standard
+        vip: VIP
+    business-group: 
+      name: Business
+      subgroup:
+        standard: Standard
+        pyme: PYME
+  operation:
+    buy-type: Buy
+    sell-type: Sell
+  eureka:
+    service-url:
+      prefix: //
+      gateway-service: gateway-service
+      customer-info-service: customer-info-service
+      active-operations-service: active-operations-service
